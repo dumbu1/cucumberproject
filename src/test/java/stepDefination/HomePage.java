@@ -7,18 +7,18 @@ import org.testng.Assert;
 import io.cucumber.java.en.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.SeleniumPage;
+import util.DriverFactory;
 import util.ReusableMethods;
 
 public class HomePage {
+	
 	private static WebDriver wd;
 	
 	@Given("user is in {string} page")
 	public void user_is_in_page(String pageTitle) {
 		
-		WebDriverManager.chromedriver().setup();
-		wd=new ChromeDriver();
-		wd.get("https://crossbrowsertesting.github.io/");
-		
+		DriverFactory obj_DriverFactory=new DriverFactory();
+		wd=obj_DriverFactory.getDriver();
 	}
 
 	@When("user clicks on Selenium Example Page")
