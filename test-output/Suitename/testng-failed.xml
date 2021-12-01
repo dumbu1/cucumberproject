@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suitename]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Testname(failed)">
     <classes>
-      <class name="testRunners.TestRun_Smoke">
+      <class name="testRunners.TestRun1">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="0 2"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- testRunners.TestRun_Smoke -->
+      </class> <!-- testRunners.TestRun1 -->
     </classes>
   </test> <!-- Testname(failed) -->
 </suite> <!-- Failed suite [Suitename] -->

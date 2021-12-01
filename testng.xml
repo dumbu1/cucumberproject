@@ -6,7 +6,7 @@
   <test name="Testname">
   <classes>
   
-  <class name="testRunners.TestRun_Smoke"></class>
+  <class name="testRunners.TestRun1"></class>
   
   </classes>
   </test> <!-- Testname -->

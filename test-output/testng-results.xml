@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-29T14:24:16 IST" name="Suitename" finished-at="2021-11-29T14:24:28 IST" duration-ms="12765">
+  <suite started-at="2021-12-01T13:59:33 IST" name="Suitename" finished-at="2021-12-01T13:59:52 IST" duration-ms="18320">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun_Smoke@25641d39]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@25641d39]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-11-29T14:24:16 IST" name="Testname" finished-at="2021-11-29T14:24:28 IST" duration-ms="12765">
-      <class name="testRunners.TestRun_Smoke">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.TestRun_Smoke@25641d39]" started-at="2021-11-29T14:24:16 IST" name="setUpClass" finished-at="2021-11-29T14:24:16 IST" duration-ms="553" status="PASS">
+    <test started-at="2021-12-01T13:59:33 IST" name="Testname" finished-at="2021-12-01T13:59:52 IST" duration-ms="18320">
+      <class name="testRunners.TestRun1">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.TestRun1@25641d39]" started-at="2021-12-01T13:59:33 IST" name="setUpClass" finished-at="2021-12-01T13:59:34 IST" duration-ms="609" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@19e0dffe]]>
+                <![CDATA[org.testng.TestRunner@91f565d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun_Smoke@25641d39]" started-at="2021-11-29T14:24:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-29T14:24:28 IST" duration-ms="12107" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@25641d39]" started-at="2021-12-01T13:59:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-01T13:59:42 IST" duration-ms="8258" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -47,18 +47,67 @@ at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
 at stepDefination.HomePage.system_should_open(HomePage.java:36)
-at ✽.system should open "Selenium Test Example Page1"(file:///C:/Users/ignite/git/cucumber/cucumberproject/src/test/resources/features/sprint1/feature1.feature:6)
+at ✽.system should open "Selenium Test Example Page1"(file:///C:/Users/ignite/git/cucumberproject/src/test/resources/features/sprint1/feature1.feature:6)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.TestRun_Smoke@25641d39]" started-at="2021-11-29T14:24:28 IST" name="tearDownClass" finished-at="2021-11-29T14:24:28 IST" duration-ms="19" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@25641d39]" started-at="2021-12-01T13:59:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-01T13:59:47 IST" duration-ms="4434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["scenario2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[feature1]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@25641d39]" started-at="2021-12-01T13:59:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-01T13:59:52 IST" duration-ms="4909" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["scenario3"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[feature1]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Selenium Test Example Page2] but found [Selenium Test Example Page]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Selenium Test Example Page2] but found [Selenium Test Example Page]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at stepDefination.HomePage.system_should_open(HomePage.java:36)
+at ✽.system should open "Selenium Test Example Page2"(file:///C:/Users/ignite/git/cucumberproject/src/test/resources/features/sprint1/feature1.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.TestRun1@25641d39]" started-at="2021-12-01T13:59:52 IST" name="tearDownClass" finished-at="2021-12-01T13:59:52 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- testRunners.TestRun_Smoke -->
+      </class> <!-- testRunners.TestRun1 -->
     </test> <!-- Testname -->
   </suite> <!-- Suitename -->
 </testng-results>
