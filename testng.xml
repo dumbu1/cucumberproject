@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-
-<suite name="Suitename">
-  <test name="Testname">
-  <classes>
+<suite name="Suite" thread-count="5">
+ 
   
-  <class name="testRunners.TestRun1"></class>
+  <test name="Test_chrome">
+  <parameter name="browser" value="chrome"></parameter>
+ <parameter name="url" value="https://crossbrowsertesting.github.io/"></parameter>
+ 
+ <classes>
+ 
+      <class name="appHooks.ChangePropertyValues"/>
+      
+      <class name="testRunners.TestRun1"></class>
+    
+    </classes>
+  </test> <!-- Test -->
   
-  </classes>
-  </test> <!-- Testname -->
-</suite> <!-- Suitename -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <test name="Test_firefox">
+  <parameter name="browser" value="firefox"></parameter>
+ <parameter name="url" value="https://crossbrowsertesting.github.io/"></parameter>
+ 
+ <classes>
+ 
+      <class name="appHooks.DummyClass"/>
+      
+      <class name="testRunners.TestRun1"></class>
+    
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

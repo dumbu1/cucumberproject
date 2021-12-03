@@ -8,19 +8,40 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suitename</th></tr>
-<tr><td><a href="#t0">Testname</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">18,320</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test_chrome</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21,418</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test_firefox</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">258,898</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">280,316</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suitename</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testname &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testRunners.TestRun1</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1638347374484</td><td rowspan="2">8258</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr><th colspan="4">Testname &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testRunners.TestRun1</td><td><a href="#m2">runScenario</a></td><td rowspan="1">1638347382748</td><td rowspan="1">4434</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test_chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">appHooks.DummyClass</td><td><a href="#m0">Writer_Browser_In_Property_File</a></td><td rowspan="1">1638510679205</td><td rowspan="1">18</td></tr><tr class="passedodd"><td rowspan="3">testRunners.TestRun1</td><td><a href="#m1">runScenario</a></td><td rowspan="3">1638510679950</td><td rowspan="3">10159</td></tr><tr class="passedodd"><td><a href="#m2">runScenario</a></td></tr><tr class="passedodd"><td><a href="#m3">runScenario</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test_firefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testRunners.TestRun1</td><td><a href="#m4">runScenario</a></td><td rowspan="1">1638510700670</td><td rowspan="1">143694</td></tr><tr><th colspan="4">Test_firefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">appHooks.DummyClass</td><td><a href="#m5">Writer_Browser_In_Property_File</a></td><td rowspan="1">1638510700607</td><td rowspan="1">9</td></tr><tr class="passedodd"><td rowspan="2">testRunners.TestRun1</td><td><a href="#m6">runScenario</a></td><td rowspan="2">1638510921883</td><td rowspan="2">37607</td></tr><tr class="passedodd"><td><a href="#m7">runScenario</a></td></tr></tbody>
 </table>
-<h2>Testname</h2><h3 id="m0">testRunners.TestRun1#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;scenario1&quot;</td><td>&quot;Optional[feature1]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Selenium Test Example Page1] but found [Selenium Test Example Page]
-	at stepDefination.HomePage.system_should_open(HomePage.java:36)
-	at ✽.system should open &quot;Selenium Test Example Page1&quot;(file:///C:/Users/ignite/git/cucumberproject/src/test/resources/features/sprint1/feature1.feature:6)
-... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testRunners.TestRun1#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;scenario3&quot;</td><td>&quot;Optional[feature1]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Selenium Test Example Page2] but found [Selenium Test Example Page]
-	at stepDefination.HomePage.system_should_open(HomePage.java:36)
-	at ✽.system should open &quot;Selenium Test Example Page2&quot;(file:///C:/Users/ignite/git/cucumberproject/src/test/resources/features/sprint1/feature1.feature:20)
-... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test_chrome</h2><h3 id="m0">appHooks.DummyClass#Writer_Browser_In_Property_File</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>chrome</td><td>https://crossbrowsertesting.github.io/</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testRunners.TestRun1#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;scenario1&quot;</td><td>&quot;Optional[feature1]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">testRunners.TestRun1#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;scenario2&quot;</td><td>&quot;Optional[feature1]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testRunners.TestRun1#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;scenario3&quot;</td><td>&quot;Optional[feature1]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test_firefox</h2><h3 id="m4">testRunners.TestRun1#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;scenario1&quot;</td><td>&quot;Optional[feature1]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: No connection could be made because the target machine actively refused it. (os error 10061)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;DESKTOP-N9QFJ52&apos;, ip: &apos;192.168.43.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:198)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:164)
+	at appHooks.DriverFactory.driverFactory(DriverFactory.java:41)
+	at appHooks.AppHooks.invokeBrowser(AppHooks.java:38)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">appHooks.DummyClass#Writer_Browser_In_Property_File</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>firefox</td><td>https://crossbrowsertesting.github.io/</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testRunners.TestRun1#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;scenario3&quot;</td><td>&quot;Optional[feature1]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testRunners.TestRun1#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;scenario2&quot;</td><td>&quot;Optional[feature1]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

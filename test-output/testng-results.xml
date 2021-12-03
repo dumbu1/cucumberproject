@@ -1,27 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-01T13:59:33 IST" name="Suitename" finished-at="2021-12-01T13:59:52 IST" duration-ms="18320">
+  <suite started-at="2021-12-03T11:21:19 IST" name="Suite" finished-at="2021-12-03T11:25:59 IST" duration-ms="280378">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@25641d39]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@20140db9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@1cf6d1be]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-12-01T13:59:33 IST" name="Testname" finished-at="2021-12-01T13:59:52 IST" duration-ms="18320">
-      <class name="testRunners.TestRun1">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.TestRun1@25641d39]" started-at="2021-12-01T13:59:33 IST" name="setUpClass" finished-at="2021-12-01T13:59:34 IST" duration-ms="609" status="PASS">
+    <test started-at="2021-12-03T11:21:19 IST" name="Test_chrome" finished-at="2021-12-03T11:21:40 IST" duration-ms="21418">
+      <class name="appHooks.DummyClass">
+        <test-method signature="Writer_Browser_In_Property_File(java.lang.String,java.lang.String)[pri:0, instance:appHooks.DummyClass@4c1909a3]" started-at="2021-12-03T11:21:19 IST" name="Writer_Browser_In_Property_File" finished-at="2021-12-03T11:21:19 IST" duration-ms="18" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@91f565d]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://crossbrowsertesting.github.io/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Writer_Browser_In_Property_File -->
+      </class> <!-- appHooks.DummyClass -->
+      <class name="testRunners.TestRun1">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.TestRun1@20140db9]" started-at="2021-12-03T11:21:19 IST" name="setUpClass" finished-at="2021-12-03T11:21:19 IST" duration-ms="704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@101bdd1c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@25641d39]" started-at="2021-12-01T13:59:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-01T13:59:42 IST" duration-ms="8258" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@20140db9]" started-at="2021-12-03T11:21:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-03T11:21:30 IST" duration-ms="10159" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,27 +53,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Selenium Test Example Page1] but found [Selenium Test Example Page]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Selenium Test Example Page1] but found [Selenium Test Example Page]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at stepDefination.HomePage.system_should_open(HomePage.java:36)
-at ✽.system should open "Selenium Test Example Page1"(file:///C:/Users/ignite/git/cucumberproject/src/test/resources/features/sprint1/feature1.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@25641d39]" started-at="2021-12-01T13:59:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-01T13:59:47 IST" duration-ms="4434" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@20140db9]" started-at="2021-12-03T11:21:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-03T11:21:35 IST" duration-ms="5428" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,7 +72,7 @@ at ✽.system should open "Selenium Test Example Page1"(file:///C:/Users/ignite/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@25641d39]" started-at="2021-12-01T13:59:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-01T13:59:52 IST" duration-ms="4909" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@20140db9]" started-at="2021-12-03T11:21:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-03T11:21:40 IST" duration-ms="4958" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -83,31 +85,130 @@ at ✽.system should open "Selenium Test Example Page1"(file:///C:/Users/ignite/
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Selenium Test Example Page2] but found [Selenium Test Example Page]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Selenium Test Example Page2] but found [Selenium Test Example Page]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at stepDefination.HomePage.system_should_open(HomePage.java:36)
-at ✽.system should open "Selenium Test Example Page2"(file:///C:/Users/ignite/git/cucumberproject/src/test/resources/features/sprint1/feature1.feature:20)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.TestRun1@25641d39]" started-at="2021-12-01T13:59:52 IST" name="tearDownClass" finished-at="2021-12-01T13:59:52 IST" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.TestRun1@20140db9]" started-at="2021-12-03T11:21:40 IST" name="tearDownClass" finished-at="2021-12-03T11:21:40 IST" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- testRunners.TestRun1 -->
-    </test> <!-- Testname -->
-  </suite> <!-- Suitename -->
+    </test> <!-- Test_chrome -->
+    <test started-at="2021-12-03T11:21:40 IST" name="Test_firefox" finished-at="2021-12-03T11:25:59 IST" duration-ms="258898">
+      <class name="appHooks.DummyClass">
+        <test-method signature="Writer_Browser_In_Property_File(java.lang.String,java.lang.String)[pri:0, instance:appHooks.DummyClass@74e28667]" started-at="2021-12-03T11:21:40 IST" name="Writer_Browser_In_Property_File" finished-at="2021-12-03T11:21:40 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://crossbrowsertesting.github.io/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Writer_Browser_In_Property_File -->
+      </class> <!-- appHooks.DummyClass -->
+      <class name="testRunners.TestRun1">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.TestRun1@1cf6d1be]" started-at="2021-12-03T11:21:40 IST" name="setUpClass" finished-at="2021-12-03T11:21:40 IST" duration-ms="44" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@e91af20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@1cf6d1be]" started-at="2021-12-03T11:21:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-03T11:24:04 IST" duration-ms="143694" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["scenario1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[feature1]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: No connection could be made because the target machine actively refused it. (os error 10061)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-N9QFJ52', ip: '192.168.43.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: No connection could be made because the target machine actively refused it. (os error 10061)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-N9QFJ52', ip: '192.168.43.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:198)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:164)
+at appHooks.DriverFactory.driverFactory(DriverFactory.java:41)
+at appHooks.AppHooks.invokeBrowser(AppHooks.java:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@1cf6d1be]" started-at="2021-12-03T11:24:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-03T11:25:21 IST" duration-ms="77508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["scenario2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[feature1]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRun1@1cf6d1be]" started-at="2021-12-03T11:25:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-03T11:25:59 IST" duration-ms="37607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["scenario3"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[feature1]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.TestRun1@1cf6d1be]" started-at="2021-12-03T11:25:59 IST" name="tearDownClass" finished-at="2021-12-03T11:25:59 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunners.TestRun1 -->
+    </test> <!-- Test_firefox -->
+  </suite> <!-- Suite -->
 </testng-results>
