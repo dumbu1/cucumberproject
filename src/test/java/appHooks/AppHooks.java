@@ -1,53 +1,70 @@
 package appHooks;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import util.DriverFactory;
 
-public class AppHooks {
-	
+
+public class AppHooks{
+
 	private static WebDriver wd;
+
+	private static DriverFactory obj_DriverFactory;
 	
-	@Before(order=0)
+	
+	
+	
+	@Before(order = 0)
+	
+	
 	public void invokeBrowser() {
-		DriverFactory obj_DriverFactory=new DriverFactory();
+
+		obj_DriverFactory=new DriverFactory();
+
 		wd=obj_DriverFactory.driverFactory();
-		
+
+
 	}
-	
-	@Before(order=1)
+
+	@Before(order = 1 )
 	public void enterUrl() {
-		
-		wd.get("https://crossbrowsertesting.github.io/");
+
+		obj_DriverFactory.enterUrl(wd);
 	}
-	
-	@After(order = 2)
+
+	@After
 	public void closeBrowser() {
 		wd.close();
-		
 	}
-	
-	@After(order = 0)
+
+	@After
 	public void failScreeshot(Scenario sc) {
-		
+
 		if(sc.isFailed()) {
 			//take screenshot
 			String screenshotName=sc.getName().replaceAll(" ", "_");
-			
-		byte[] sourcePath =((TakesScreenshot)wd).getScreenshotAs(OutputType.BYTES);
-		
-		//attaching screenshot
-		
-		sc.attach(sourcePath, "image/png", screenshotName);
+
+			byte[] sourcePath =((TakesScreenshot)wd).getScreenshotAs(OutputType.BYTES);
+
+			//attaching screenshot
+
+			sc.attach(sourcePath, "image/png", screenshotName);
 		}
-		
+
 	}
 
 }

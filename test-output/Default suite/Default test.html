@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 30 13:24:44 IST 2021</td>
+<td>Started on:</td><td>Thu Dec 02 13:15:27 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (906 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (71 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,41 +75,71 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunners.TestRun1.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRun1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "scenario2", "Optional[feature1]"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;stepDefination.HomePage.wd&quot; is null
-	at stepDefination.HomePage.user_is_in_page(HomePage.java:19)
-	at ?.user is in &quot;Web Examples for Selenium Tests&quot; page(file:///C:/Users/ignite/git/cucumberproject/src/test/resources/features/sprint1/feature1.feature:10)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1618984457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1618984457'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;stepDefination.HomePage.wd&quot; is null
-	at stepDefination.HomePage.user_is_in_page(HomePage.java:19)
-	at ?.user is in &quot;Web Examples for Selenium Tests&quot; page(file:///C:/Users/ignite/git/cucumberproject/src/test/resources/features/sprint1/feature1.feature:10)
+<td title='appHooks.AppHooks.invokeBrowser()'><b>invokeBrowser</b><br>Test class: appHooks.AppHooks</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Test on method invokeBrowser but has not been marked @Optional or defined
+in C:\Users\ignite\AppData\Local\Temp\testng-eclipse--1019851798\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace443934570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace443934570'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Test on method invokeBrowser but has not been marked @Optional or defined
+in C:\Users\ignite\AppData\Local\Temp\testng-eclipse--1019851798\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testRunners.TestRun1@25641d39</td></tr>
-<tr>
-<td title='testRunners.TestRun1.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRun1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "scenario3", "Optional[feature1]"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;stepDefination.HomePage.wd&quot; is null
-	at stepDefination.HomePage.user_is_in_page(HomePage.java:19)
-	at ?.user is in &quot;Web Examples for Selenium Tests&quot; page(file:///C:/Users/ignite/git/cucumberproject/src/test/resources/features/sprint1/feature1.feature:18)
-</pre></div><a href='#' onClick='toggleBox("stack-trace702500163", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace702500163'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;stepDefination.HomePage.wd&quot; is null
-	at stepDefination.HomePage.user_is_in_page(HomePage.java:19)
-	at ?.user is in &quot;Web Examples for Selenium Tests&quot; page(file:///C:/Users/ignite/git/cucumberproject/src/test/resources/features/sprint1/feature1.feature:18)
-</pre></div></td>
-<td>0</td>
-<td>testRunners.TestRun1@25641d39</td></tr>
-<tr>
-<td title='testRunners.TestRun1.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRun1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "scenario1", "Optional[feature1]"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;stepDefination.HomePage.wd&quot; is null
-	at stepDefination.HomePage.user_is_in_page(HomePage.java:19)
-	at ?.user is in &quot;Web Examples for Selenium Tests&quot; page(file:///C:/Users/ignite/git/cucumberproject/src/test/resources/features/sprint1/feature1.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2143739483", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2143739483'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;stepDefination.HomePage.wd&quot; is null
-	at stepDefination.HomePage.user_is_in_page(HomePage.java:19)
-	at ?.user is in &quot;Web Examples for Selenium Tests&quot; page(file:///C:/Users/ignite/git/cucumberproject/src/test/resources/features/sprint1/feature1.feature:4)
-</pre></div></td>
-<td>0</td>
-<td>testRunners.TestRun1@25641d39</td></tr>
+<td>appHooks.AppHooks@18d87d80</td></tr>
 </table><p>
 </body>
 </html>
